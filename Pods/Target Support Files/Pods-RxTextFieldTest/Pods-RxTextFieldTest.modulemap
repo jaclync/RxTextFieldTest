@@ -1,0 +1,6 @@
+framework module Pods_RxTextFieldTest {
+  umbrella header "Pods-RxTextFieldTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

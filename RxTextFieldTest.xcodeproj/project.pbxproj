@@ -14,6 +14,7 @@
 		1F4AEB591E779899001A9227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4AEB571E779899001A9227 /* LaunchScreen.storyboard */; };
 		1F4AEB641E779899001A9227 /* RxTextFieldTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AEB631E779899001A9227 /* RxTextFieldTestTests.swift */; };
 		1F4AEB6F1E779899001A9227 /* RxTextFieldTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AEB6E1E779899001A9227 /* RxTextFieldTestUITests.swift */; };
+		2EC35AF453400D63D4112ACE /* Pods_RxTextFieldTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B276BB1619DCD36D06FFE2D0 /* Pods_RxTextFieldTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		1F4AEB6A1E779899001A9227 /* RxTextFieldTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTextFieldTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4AEB6E1E779899001A9227 /* RxTextFieldTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextFieldTestUITests.swift; sourceTree = "<group>"; };
 		1F4AEB701E779899001A9227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584BA0FCD99495742ADCC3D0 /* Pods-RxTextFieldTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextFieldTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTextFieldTest/Pods-RxTextFieldTest.release.xcconfig"; sourceTree = "<group>"; };
+		6C306BE00C97B8098AEB90CD /* Pods-RxTextFieldTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextFieldTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTextFieldTest/Pods-RxTextFieldTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B276BB1619DCD36D06FFE2D0 /* Pods_RxTextFieldTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextFieldTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC35AF453400D63D4112ACE /* Pods_RxTextFieldTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1F4AEB621E779899001A9227 /* RxTextFieldTestTests */,
 				1F4AEB6D1E779899001A9227 /* RxTextFieldTestUITests */,
 				1F4AEB4C1E779899001A9227 /* Products */,
+				C84DDFBDA0B40EC612EDBE0C /* Pods */,
+				302A54EFC3276B2EB093D174 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = RxTextFieldTestUITests;
 			sourceTree = "<group>";
 		};
+		302A54EFC3276B2EB093D174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B276BB1619DCD36D06FFE2D0 /* Pods_RxTextFieldTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84DDFBDA0B40EC612EDBE0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C306BE00C97B8098AEB90CD /* Pods-RxTextFieldTest.debug.xcconfig */,
+				584BA0FCD99495742ADCC3D0 /* Pods-RxTextFieldTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F4AEB731E779899001A9227 /* Build configuration list for PBXNativeTarget "RxTextFieldTest" */;
 			buildPhases = (
+				952428F1F9C251B2C303A6A9 /* [CP] Check Pods Manifest.lock */,
 				1F4AEB471E779899001A9227 /* Sources */,
 				1F4AEB481E779899001A9227 /* Frameworks */,
 				1F4AEB491E779899001A9227 /* Resources */,
+				DE169F6B209B55E64E4828A7 /* [CP] Embed Pods Frameworks */,
+				7B1F6ECA80E137DB6B347FC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B1F6ECA80E137DB6B347FC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTextFieldTest/Pods-RxTextFieldTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		952428F1F9C251B2C303A6A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE169F6B209B55E64E4828A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTextFieldTest/Pods-RxTextFieldTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F4AEB471E779899001A9227 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		1F4AEB741E779899001A9227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C306BE00C97B8098AEB90CD /* Pods-RxTextFieldTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SWLLDQPWM4;
@@ -426,6 +502,7 @@
 		};
 		1F4AEB751E779899001A9227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584BA0FCD99495742ADCC3D0 /* Pods-RxTextFieldTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SWLLDQPWM4;
